@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.9",
+    "@tailwindcss/postcss": "^4.1.10",
+    "postcss": "^8.5.5",
+    "tailwind-scrollbar-hide": "^4.0.0"
+  }
+}

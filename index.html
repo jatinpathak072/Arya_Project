@@ -1,0 +1,711 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="scroll-smooth">
+  <div class="bg-[#F13A40] text-white text-sm px-4 py-2 flex justify-center md:justify-end items-center">
+    <div
+      class="flex justify-center sm:flex-row gap-6 w-full sm:w-auto cursor-pointer items-center sm:items-start text-[12px] md:text-[16px]">
+      <span class="flex items-center gap-1">
+        <i class="fa-solid fa-phone"></i> 1800-102-1044
+      </span>
+      <span class="flex items-center gap-1">
+        <i class="fa-solid fa-envelope"></i> admission@aryacollege.org
+      </span>
+    </div>
+  </div>
+  <header class="bg-white shadow-md font-poppins relative z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <img src="Assets/logo.png" alt="Arya College Logo" class="h-[33px] md:h-10 w-auto" />
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#hero"
+          class="text-red-600 font-semibold relative after:content-['•'] after:text-red-600 after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:text-base">Home</a>
+        <a href="#about" class="text-gray-400 hover:text-red-600">About Arya</a>
+        <a href="#courses" class="text-gray-400 hover:text-red-600">Academics</a>
+        <a href="#events" class="text-gray-400 hover:text-red-600">Events</a>
+        <a href="#placements" class="text-gray-400 hover:text-red-600">Placements</a>
+        <a href="#gallery" class="text-gray-400 hover:text-red-600">Gallery</a>
+        <a href="#infrastructure" class="text-gray-400 hover:text-red-600">Infrastructure</a>
+        <a href="#resources" class="text-gray-400 hover:text-red-600">Resources</a>
+        <a href="#Blogs" class="text-gray-400 hover:text-red-600">Blogs</a>
+        <a href="#Contact Us" class="text-gray-400 hover:text-red-600">Contact Us</a>
+      </nav>
+      <button class="md:hidden text-2xl" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+  <div id="mobile-slide-menu"
+    class="fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+    <div class="p-4 flex flex-col gap-4 text-sm">
+      <button id="close-menu" class="self-end text-xl"><i class="fa-solid fa-xmark"></i></button>
+      <a href="#hero" class="text-red-600 font-semibold">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-red-600">About Arya</a>
+      <a href="#courses" class="text-gray-700 hover:text-red-600">Academics</a>
+      <a href="#events" class="text-gray-700 hover:text-red-600">Events</a>
+      <a href="#placements" class="text-gray-700 hover:text-red-600">Placements</a>
+      <a href="#gallery" class="text-gray-700 hover:text-red-600">Gallery</a>
+      <a href="#infrastructure" class="text-gray-700 hover:text-red-600">Infrastructure</a>
+      <a href="#resources" class="text-gray-700 hover:text-red-600">Resources</a>
+      <a href="#Blogs" class="text-gray-700 hover:text-red-600">Blogs</a>
+      <a href="#Contact Us" class="text-gray-700 hover:text-red-600">Contact Us</a>
+    </div>
+  </div>
+  <section id="hero" class="bg-[#F6F6F6] py-20 font-poppins">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-[50%]">
+        <div class="admission mb-4 flex items-center gap-5 justify-center md:justify-start">
+          <span class="text-[9px] md:text-base font-normal bg-[#F13A40] py-2 px-6 rounded-lg text-white">
+            Admission Open 2023
+          </span>
+          <span class="text-[#182F43] text-[9px] md:text-[14px]">Pay Online</span>
+        </div>
+        <h2 class="text-[22px] md:text-4xl font-bold mb-4 text-[#2238B2] text-center md:text-left">
+          Arya Group Of Colleges
+        </h2>
+        <p class="text-[#182F43] mb-6 text-[10px] md:text-base text-center md:text-left">
+          We don’t just teach students, but we train them to be successful professionals.<br class="hidden md:block" />
+          We motivate and orient our students and to take on the corporate world.
+        </p>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="#" download
+            class="bg-[#2238B2] text-[10px] md:text-base text-white px-6 py-2 rounded flex items-center gap-2">
+            Brochure <img class="h-5" src="Assets/download.png" alt="">
+          </a>
+          <a href="#" class="border border-[#0048FF] text-[10px] md:text-base text-[#0048FF] px-6 py-2 rounded">
+            Read More
+          </a>
+        </div>
+      </div>
+      <div class="w-[371px] md:w-[50%] mx-auto">
+        <img src="Assets/banner.png" alt="Hero Image" class="w-full rounded-lg" />
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#EFEFEF] px-4 py-6">
+    <div class="w-full flex flex-col md:flex-row md:items-center gap-4">
+      <div
+        class="flex flex-col items-center md:flex-row md:items-center gap-2 bg-[#F13A40] border px-4 py-4 rounded shadow-sm text-center md:text-left md:shrink-0">
+        <img src="Assets/success.png" alt="22 Years" class="w-[58px] md:h-[70px] h-auto" />
+        <span class="text-[13px] md:text-sm font-medium text-white">
+          22 Years<br class="hidden md:block" />of success
+        </span>
+      </div>
+      <div class="flex-1 flex md:grid md:grid-cols-5 overflow-x-auto md:overflow-visible gap-3 md:gap-4 scrollbar-hide">
+        <div
+          class="min-w-[97px] md:min-w-0 flex items-center justify-center gap-1 bg-white border px-3 py-2 rounded shadow-sm text-center">
+          <img src="Assets/ranked.png" alt="RTU" class="h-[13px] md:h-8 w-auto" />
+          <span class="text-[7px] md:text-sm font-medium text-[#182F43]">
+            Ranked "A"<br class="hidden md:block" />By RTU
+          </span>
+        </div>
+        <div
+          class="min-w-[97px] md:min-w-0 flex items-center justify-center gap-1 bg-white border px-3 py-2 rounded shadow-sm text-center">
+          <img src="Assets/naac.png" alt="NAAC" class="h-[13px] md:h-8 w-auto" />
+          <span class="text-[7px] md:text-sm font-medium text-[#182F43]">
+            NAAC<br class="hidden md:block" />Accredited
+          </span>
+        </div>
+        <div
+          class="min-w-[97px] md:min-w-0 flex items-center justify-center gap-1 bg-white border px-3 py-2 rounded shadow-sm text-center">
+          <img src="Assets/nba.png" alt="NBA" class="h-[13px] md:h-8 w-auto" />
+          <span class="text-[7px] md:text-sm font-medium text-[#182F43]">
+            NBA Accredited
+            <br class="hidden md:block" />(CSE Branch)
+          </span>
+        </div>
+        <div
+          class="min-w-[97px] md:min-w-0 flex items-center justify-center gap-1 bg-white border px-3 py-2 rounded shadow-sm text-center">
+          <img src="Assets/ranked.png" alt="CoE" class="h-[13px] md:h-8 w-auto" />
+          <span class="text-[7px] md:text-sm font-medium text-[#182F43]">
+            RTU CoE In Air
+            <br class="hidden md:block" />(Robotics), PCB
+          </span>
+        </div>
+        <div
+          class="min-w-[97px] md:min-w-0 flex items-center justify-center gap-1 bg-white border px-3 py-2 rounded shadow-sm text-center">
+          <img src="Assets/success.png" alt="Awards" class="h-[13px] md:h-8 w-auto" />
+          <span class="text-[7px] md:text-sm font-medium text-[#182F43]">
+            32 Awards<br class="hidden md:block" />Won
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-7xl mt-9 mx-auto px-4 py-5 md:py-1 text-center" id="about">
+    <h2 class="text-[22px] md:text-3xl font-bold text-[#2238B2] mb-4">Arya College Jaipur</h2>
+    <p class="text-[10px] md:text-[17px] text-[#182F43] max-w-[1133px] mx-auto">
+      Arya College is the Best Engineering College in the entire Rajasthan. We don’t just teach students, but we train
+      them to be successful professionals. We motivate and orient our students and to take on the corporate world.
+    </p>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6 items-center">
+    <div class="space-y-6">
+      <div class="bg-[#F3F4F6] rounded-lg shadow-sm flex">
+        <div class="w-6 bg-[#2238B2] flex items-center justify-center p-4 md:p-6 rounded-l-lg">
+          <span class="text-white whitespace-nowrap -rotate-90 text-[10px] md:text-sm font-bold">
+            Our Mission
+          </span>
+        </div>
+        <div class="p-4">
+          <ul class="text-[10px] md:text-[16px] text-gray-700 space-y-2 leading-relaxed">
+            <li>To Create a Progressive Academic Environment <br class="hidden md:block"> for the Students</li>
+            <li>Help Students Achieve Qualities like Techno–Managerial <br class="hidden md:block"> Skills and become
+              Innovative and Creative Professionals</li>
+            <li>Develop Individuals who can Contribute in the <br class="hidden md:block"> Development and Progress of
+              the Society, Nation & the <br class="hidden md:block"> World as a whole.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-[#F3F4F6] rounded-lg shadow-sm flex">
+        <div class="w-6 bg-[#2238B2] flex items-center justify-center p-4 md:p-6 rounded-l-lg">
+          <span class="text-white whitespace-nowrap -rotate-90 text-[10px] md:text-sm font-bold">
+            Our Vission
+          </span>
+        </div>
+        <div class="p-4 md:p-6">
+          <ul class="text-gray-700 space-y-2 text-[10px] md:text-sm leading-relaxed">
+            <li>To Emerge as the Best Educational Institute</li>
+            <li>
+              Work for Excellence in Imparting Quality Education to
+              <br class="hidden md:block" /> the Students
+            </li>
+            <li>
+              Nurture various Talents as Innovative Professionals in
+              <br class="hidden md:block" />
+              Technical & Managerial field thereby making them
+              <br class="hidden md:block" />
+              Competitive to meet all the Future Challenges of
+              <br class="hidden md:block" />
+              Global Economy.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex justify-center md:block">
+      <div class="relative flex justify-center md:block">
+        <div
+          class="absolute bottom-2 left-2 right-2 rounded-md bg-white px-4 py-4 flex justify-between items-center w-[calc(100%-1rem)] max-w-full">
+          <div class="flex flex-col">
+            <p class="text-sm font-semibold">15500+</p>
+            <p class="text-xs">Students Placed</p>
+            <span class="text-yellow-400 text-sm font-semibold">★ ★ ★ ★ ★</span>
+          </div>
+          <div class="ml-2 shrink-0">
+            <button class="text-white bg-[#F13A40] text-xs px-3 py-1 rounded whitespace-nowrap">Admission Open</button>
+          </div>
+        </div>
+        <img src="Assets/placed.jpg" alt="Campus Image"
+          class="w-[342px] md:w-full h-auto object-cover rounded-lg shadow-md" />
+      </div>
+  </section>
+  <section class="relative px-4 py-1 pb-10 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#F13A40] to-[#0048FF] z-0"></div>
+    <div class="absolute inset-0 bg-[#00000066] z-0"></div>
+    <div class="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-center">
+      <div class="bg-white text-black rounded-b-xl shadow-md py-20 px-10 flex-wrap items-center justify-center">
+        <span class="bg-[#F13A40] text-white text-[10px] md:text-xs px-3 py-1 rounded-full inline-block mb-3">
+          Academics
+        </span>
+        <h2 class="text-[18px] md:text-2xl font-bold mb-4 text-[#2238B2] leading-snug">
+          Successfully Complete Your <br class="block md:hidden" /> Degree At Arya College
+        </h2>
+        <p class="text-[#182F43] text-[10px] md:text-sm   leading-relaxed">
+          Arya College is the Best Engineering College in the entire <br> Rajasthan. We don’t just teach students, but
+          we train them to <br> be successful professionals. We motivate and orient our <br> students to take on the
+          corporate world.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-4 flex-1 mx-28">
+        <div
+          class="bg-white text-black rounded-xl p-5 shadow-md flex flex-col gap-2 hover:scale-105 transition w-[calc(50%-0.5rem)]">
+          <img src="Assets/undergraduation.svg" class="w-[50px]" alt="">
+          <span class="font-semibold">Under <br> Graduation</span>
+        </div>
+        <div
+          class="text-white border rounded-xl p-5 shadow-md flex flex-col gap-2 hover:scale-105 transition w-[calc(50%-0.5rem)]">
+          <img src="Assets/postgraduation.svg" class="w-[50px]" alt="#">
+          <span class="font-semibold">Post <br> Graduation</span>
+        </div>
+        <div
+          class="text-white border rounded-xl p-5 shadow-md flex flex-col gap-2 hover:scale-105 transition w-[calc(50%-0.5rem)]">
+          <img src="Assets/pharma.png" class="w-[50px]" alt="">
+          <span class="font-semibold">Pharma <br> and Medical</span>
+        </div>
+        <div class="relative rounded-xl p-5 shadow-md w-[calc(50%-0.5rem)] overflow-hidden hover:scale-105 transition">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#F13A40] to-[#0048FF] z-0"></div>
+          <div class="absolute inset-0 bg-[#00000066] z-0"></div>
+          <div class="relative z-10 flex flex-col gap-2 text-white rounded-full">
+            <div class="bg-[#FFF2F2] p-4 rounded-full flex w-[55px]">
+              <i class="fa-solid fa-file-invoice text-[#F13A40] text-2xl"></i>
+            </div>
+            <span class="font-semibold">Online Admission <br> Procedure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="px-4 py-16 bg-white text-center">
+    <h2 class="text-[12px] md:text-3xl font-bold text-[#1e40af] mb-6">
+      Recruitment In Arya College
+    </h2>
+    <div class="flex flex-nowrap overflow-x-auto gap-2 mb-10 justify-center">
+      <button
+        class="flex-shrink-0 px-4 py-2 border border-[#2238B2DE]rounded-md bg-[#2238B2] text-white font-medium text-[8px] md:text-base">Highest
+        Package</button>
+      <button
+        class="flex-shrink-0 px-4 py-2 border border-[#2238B2DE] rounded-md text-[#2238B2DE] font-medium text-[8px] md:text-base">Top
+        Recruiters</button>
+      <button
+        class="flex-shrink-0 px-4 py-2 border border-[#2238B2DE] rounded-md text-[#2238B2DE] font-medium text-[8px] md:text-base">Award
+        & Achievement</button>
+      <button
+        class="flex-shrink-0 px-4 py-2 border border-[#2238B2DE] rounded-md text-[#2238B2DE] font-medium text-[8px] md:text-base">Student
+        Placed</button>
+    </div>
+    <div class="mb-16 px-4 md:px-9">
+      <div class="flex gap-4 overflow-x-auto sm:grid sm:grid-cols-2 md:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="bg-white shadow rounded-b-lg w-[154px] sm:w-auto flex-shrink-0">
+          <img src="Assets/placement1.png" alt="2021-2022" class="w-full object-cover rounded-t-lg mb-4 md:h-40">
+          <h3 class="text-red-600 font-semibold text-[9px]">2021–2022 Placements</h3>
+          <p class="text-gray-600 text-[7px] mb-3">750+ Placement Offers</p>
+          <button class="bg-red-500 text-white w-full text-[8px] px-4 py-2 rounded-b-lg">⬇ Download PDF</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow rounded-b-lg w-[154px] sm:w-auto flex-shrink-0">
+          <img src="Assets/placement4.png" alt="2021-2022" class="w-full object-cover rounded-t-lg mb-4 md:h-40">
+          <h3 class=" font-semibold text-[9px]">2020–2021 Placements</h3>
+          <p class="text-gray-600 text-[7px] mb-3">750+ Placement Offers</p>
+          <button class="bg-[#EAECF0] w-full text-[8px] px-4 py-2 rounded-b-lg">⬇ Download PDF</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow rounded-b-lg w-[154px] sm:w-auto flex-shrink-0">
+          <img src="Assets/placement3.png" alt="2021-2022" class="w-full object-cover rounded-t-lg mb-4 md:h-40">
+          <h3 class="text-gray-800 font-semibold text-[9px]">2019–2020 Placements</h3>
+          <p class="text-gray-600 text-[7px] mb-3">820+ Placement Offers</p>
+          <button class="bg-gray-200 w-full text-black text-[8px] px-4 py-2 rounded-b-lg">⬇ Download PDF</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white shadow rounded-b-lg w-[154px] sm:w-auto flex-shrink-0">
+          <img src="Assets/placement4.png" alt="2021-2022" class="w-full object-cover rounded-t-lg mb-4 md:h-40">
+          <h3 class="text-gray-800 font-semibold text-[9px]">2018–2019 Placements</h3>
+          <p class="text-gray-600 text-[7px] mb-3">820+ Placement Offers</p>
+          <button class="bg-gray-200 w-full text-black text-[8px] px-4 py-2 rounded-b-lg">⬇ Download PDF</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="px-4 py-16 bg-white text-center">
+    <h2 class="text-2xl md:text-3xl font-bold text-[#2238B2] mb-6">Industrial Alliance</h2>
+    <p class="max-w-5xl mx-auto text-gray-700 text-sm md:text-base leading-relaxed mb-12">
+      Arya College Jaipur has a definite purpose and represents inter-firm cooperative agreements aiming to achieve a
+      competitive advantage for the partners. Arya College Jaipur also highlights the primary advantage to the academic
+      community, industry, research funding, and <br class="hidden md:block" />
+      practical learning opportunities for students.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-6xl mx-auto">
+      <div class="relative flex flex-col sm:flex-row items-start gap-4 rounded-xl p-6 shadow-md text-white">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#F13A40] to-[#0048FF] rounded-xl"></div>
+        <div class="absolute inset-0 bg-black/40 rounded-xl"></div>
+        <img src="Assets/success.png" alt="Alliance Icon" class="relative w-10 h-10 mt-1 z-10">
+        <p class="relative z-10 text-left text-sm md:text-base leading-relaxed">
+          Arya College has a definite purpose and represents <br class="hidden md:block" />
+          the inter-firm cooperative agreements aiming to achieve <br class="hidden md:block" />
+          a competitive advantage for the partners.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start gap-4 bg-white text-[#182F43] rounded-xl p-6 shadow-md">
+        <img src="Assets/success.png" alt="Alliance Icon" class="w-10 h-10 mt-1">
+        <p class="text-left text-sm md:text-base leading-relaxed">
+          Arya College also highlights the primary advantage for the academic community, industry, research funding, and
+          <br class="hidden md:block" />
+          practical learning opportunities for students.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="flex flex-col sm:flex-row items-start gap-4 bg-white text-[#182F43] rounded-xl p-6 shadow-md">
+        <img src="Assets/success.png" alt="Alliance Icon" class="w-10 h-10 mt-1">
+        <p class="text-left text-sm md:text-base leading-relaxed">
+          It’s a design or approach, and the primary motive is to <br class="hidden md:block" />
+          create success factors among students.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="flex flex-col sm:flex-row items-start gap-4 bg-white text-[#182F43] rounded-xl p-6 shadow-md">
+        <img src="Assets/success.png" alt="Alliance Icon" class="w-10 h-10 mt-1">
+        <p class="text-left text-sm md:text-base leading-relaxed">
+          It extracts valuable lessons to help others utilize the <br class="hidden md:block" />
+          strategic alliance between Arya College and its industries.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#F6F6F6] py-12 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-[#2238B2] mb-10">
+        Industrial Alliance
+      </h2>
+      <div
+        class="flex md:flex-wrap overflow-x-auto md:overflow-visible gap-4 md:gap-6 justify-start md:justify-center items-center scrollbar-hide">
+        <!-- Logo 1 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/bsdu.png" alt="RTU" class="object-contain">
+        </div>
+        <!-- Logo 2 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/amcat.png" alt="AMCAT" class="object-contain">
+        </div>
+        <!-- Logo 3 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/cdac.png" alt="CDAC" class="object-contain">
+        </div>
+        <!-- Logo 4 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/wonder.png" alt="Wonder Cement" class="object-contain">
+        </div>
+        <!-- Logo 5 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/jobs.png" alt="City Jobs" class="object-contain">
+        </div>
+        <!-- Logo 6 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/tcs.png" alt="TCS" class="object-contain">
+        </div>
+        <!-- Logo 7 -->
+        <div class="bg-white flex-shrink-0 p-4 rounded-xl shadow-sm w-24 h-24 flex items-center justify-center">
+          <img src="Assets/consultadd.png" alt="10k Coders" class="object-contain">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-12 px-4">
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-[#2238B2] mb-2">
+        Arya Group Of Colleges, Jaipur,
+      </h2>
+      <p class="text-[#182F43] mb-10">The best under one roof</p>
+      <div
+        class="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+      <div class="min-w-[85%] md:min-w-0 bg-white border rounded-xl shadow-sm overflow-hidden relative snap-start">
+      <div class="relative">
+            <img src="Assets/aetm.png" alt="AETM" class="w-full h-40 object-cover">
+      <div
+            class="absolute bottom-2 right-2 bg-[#F13A40] text-white text-[10px] w-[92px] py-1 rounded-md flex items-center justify-center shadow-md">
+              Reap Code: 10
+      </div>
+      </div>
+      <div class="p-4 text-left">
+      <div class="flex mb-2">
+      <div class="bg-[#FFF5F5] flex items-center justify-center rounded-full w-[40px] mr-2">
+            <img class="h-[26px] rounded-lg" src="Assets/grp.png" alt="">
+      </div>
+      <div>
+            <h3 class="font-semibold text-md text-[#F13A40]">AIETM</h3>
+            <h6 class="text-[12px] text-[#182F43DE]">Arya Institute of Engg. Tech & Mgm</h6>
+      </div>
+      </div>
+            <p class="text-sm text-[#182F43DE] mb-7">
+              A.I.E.T.M., the Arya Institute of Engineering Technology & Mgmt is one of the most prominent colleges...
+      </p>
+            <div class="flex gap-2 items-center">
+              <a href="#" class="text-white bg-[#2238B2] text-sm rounded-md py-1 px-6">View More</a>
+              <a href="#" class="border border-[#2238B2] text-[#2238B2] text-sm px-3 py-1 rounded-md">Apply Now</a>
+      </div>
+      </div>
+      </div>
+      <div class="min-w-[85%] md:min-w-0 bg-white border rounded-xl shadow-sm overflow-hidden relative snap-start">
+          <div class="relative">
+            <img src="Assets/aiet.png" alt="AIET" class="w-full h-40 object-cover">
+      <div
+              class="absolute bottom-2 right-2 bg-[#EAECF0] text-[10px] w-[92px] py-1 rounded-md flex items-center justify-center shadow-md">
+              Reap Code: 10
+      </div>
+      </div>
+      <div class="p-4 text-left">
+      <div class="flex mb-2">
+      <div class="bg-[#EAECF0] flex items-center justify-center rounded-full w-[40px] mr-2">
+                <img class="h-[26px] rounded-lg" src="Assets/grp.png" alt="">
+      </div>
+      <div>
+                <h3 class="font-semibold text-md text-[#182F43DE]">AIET</h3>
+                <h6 class="text-[12px] text-[#182F43DE]">Arya Institute of Engg. & Tech</h6>
+      </div>
+      </div>
+            <p class="text-sm text-[#182F43DE] mb-7">
+              Another branch of Arya College is the Arya Institute of Engineering & Tech (A.I.E.T.), the foremost...
+            </p>
+      <div class="flex gap-2 items-center">
+              <a href="#" class=" bg-[#EAECF0] text-[#182F43] text-sm py-1 px-6 rounded-md">View More</a>
+              <a href="#" class="border border-[#182F439C] text-[#182F439C] text-sm px-3 py-1 rounded-md">Apply Now</a>
+      </div>
+      </div>
+      </div>
+      <div class="min-w-[85%] md:min-w-0 bg-white border rounded-xl shadow-sm overflow-hidden relative snap-start">
+      <div class="relative">
+            <img src="Assets/acerc.png" alt="ACERC" class="w-full h-40 object-cover">
+      <div
+              class="absolute bottom-2 right-2 bg-[#EAECF0] text-[10px] w-[92px] py-1 rounded-md flex items-center justify-center shadow-md">
+              Reap Code: 10
+      </div>
+      </div>
+      <div class="p-4 text-left">
+      <div class="flex mb-2">
+      <div class="bg-[#EAECF0] flex items-center justify-center rounded-full w-[40px] mr-2">
+                <img class="h-[26px] rounded-lg" src="Assets/grp.png" alt="">
+      </div>
+      <div>
+                <h3 class="font-semibold text-md text-[#182F43DE]">ACERC</h3>
+                <h6 class="text-[12px] text-[#182F43DE]">Arya College of Engg. & Res Centre</h6>
+      </div>
+      </div>
+            <p class="text-sm text-[#182F43DE] mb-7">
+              The flagship of Arya College under the Arya group of colleges, the A.C.E.R.C. prepares students...
+            </p>
+      <div class="flex gap-2 items-center">
+              <a href="#" class="bg-[#EAECF0] text-[#182F43] text-sm py-1 px-6 rounded-md">View More</a>
+              <a href="#" class="border border-[#182F439C] text-[#182F439C] text-sm px-3 py-1 rounded-md">Apply Now</a>
+      </div>
+      </div>
+      </div>
+      <div class="min-w-[85%] md:min-w-0 bg-white border rounded-xl shadow-sm overflow-hidden relative snap-start">
+      <div class="relative">
+            <img src="Assets/acp.png" alt="ACP" class="w-full h-40 object-cover">
+      <div
+              class="absolute bottom-2 right-2 bg-[#EAECF0] text-[10px] w-[92px] py-1 rounded-md flex items-center justify-center shadow-md">
+              Reap Code: 10
+      </div>
+      </div>
+      <div class="p-4 text-left">
+      <div class="flex mb-2">
+      <div class="bg-[#EAECF0] flex items-center justify-center rounded-full w-[40px] mr-2">
+                <img class="h-[26px] rounded-lg" src="Assets/grp.png" alt="">
+              </div>
+              <div>
+                <h3 class="font-semibold text-md text-[#182F43DE]">ACP</h3>
+                <h6 class="text-[12px] text-[#182F43DE]">Arya College of Pharmacy</h6>
+              </div>
+            </div>
+            <p class="text-sm text-[#182F43DE] mb-7">
+              Arya Group of Colleges also has a college for pharmacy, the Arya College of Pharmacy, established in
+              2004...
+            </p>
+            <div class="flex gap-2 items-center">
+              <a href="#" class="bg-[#EAECF0] text-[#182F43] text-sm py-1 px-6 rounded-md">View More</a>
+              <a href="#" class="border border-[#182F439C] text-[#182F439C] text-sm px-3 py-1 rounded-md">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-xl md:text-2xl font-bold text-[#2238B2] mb-2">
+        Awards & Recognition Received By Arya College
+      </h2>
+      <p class="text-sm md:text-base text-[#182F43] mb-6 leading-relaxed">
+        ARYA provide Excellent Infrastructure & propitious Academics for Professional & Technical Growth of all the
+        Students <br> and Faculty Members.
+      </p>
+      <div class="flex justify-center space-x-4 mb-10">
+        <button
+          class="border border-[#2238B2] text-[#2238B2] px-4 py-1 text-sm md:text-base rounded-md hover:bg-blue-50">Awards</button>
+        <button class="bg-[#2238B2] text-white px-4 py-1 text-sm md:text-base rounded-md hover:bg-blue-800">Students
+          Life</button>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-2 mb-6">
+        <img src="Assets/std1.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std2.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std3.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std4.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std5.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std6.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std7.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std8.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std9.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+        <img src="Assets/std10.png" class="rounded-lg object-cover w-full h-[140px] md:h-[248px]" />
+      </div>
+      <h3 class="text-lg md:text-xl font-bold text-[#2238B2] mb-6">Student Testimonial</h3>
+      <div class="overflow-x-scroll scrollbar-hide">
+        <style>
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+    
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+        </style>
+        <div class="flex gap-4 md:gap-6 px-2 md:px-4 mb-3">
+          <div class="min-w-[250px] md:min-w-[300px] snap-start shadow-[0_4px_6px_#00000040] p-4 rounded-lg text-left">
+            <div class="flex items-center mb-2">
+              <div class="pt-2 rounded-full bg-[#F13A40] flex items-center justify-center font-bold">
+                <img src="Assets/pfp.png" alt="">
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-sm md:text-base">Mohit Kumar</p>
+                <p class="text-xs md:text-sm text-gray-500">CSE Stream</p>
+              </div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text.
+            </p>
+          </div>
+          <div class="min-w-[250px] md:min-w-[300px] snap-start shadow-[0_4px_6px_#00000040] p-4 rounded-lg text-left">
+            <div class="flex items-center mb-2">
+              <div class="pt-2 rounded-full bg-[#F13A40] flex items-center justify-center font-bold">
+                <img src="Assets/pfp.png" alt="">
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-sm md:text-base">Mohit Kumar</p>
+                <p class="text-xs md:text-sm text-gray-500">CSE Stream</p>
+              </div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text.
+            </p>
+          </div>
+          <div class="min-w-[250px] md:min-w-[300px] snap-start shadow-[0_4px_6px_#00000040] p-4 rounded-lg text-left">
+            <div class="flex items-center mb-2">
+              <div class="pt-2 rounded-full bg-[#F13A40] flex items-center justify-center font-bold">
+                <img src="Assets/pfp.png" alt="">
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-sm md:text-base">Mohit Kumar</p>
+                <p class="text-xs md:text-sm text-gray-500">CSE Stream</p>
+              </div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text.
+            </p>
+          </div>
+          <div class="min-w-[250px] md:min-w-[300px] snap-start shadow-[0_4px_6px_#00000040] p-4 rounded-lg text-left">
+            <div class="flex items-center mb-2">
+              <div class="pt-2 rounded-full bg-[#F13A40] flex items-center justify-center font-bold">
+                <img src="Assets/pfp.png" alt="">
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-sm md:text-base">Mohit Kumar</p>
+                <p class="text-xs md:text-sm text-gray-500">CSE Stream</p>
+              </div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="relative text-white px-6 py-12 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#F13A40] to-[#0048FF] z-0"></div>
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+    <div class="flex items-start gap-3 mb-4">
+          <img src="Assets/success.png" alt="Arya Logo" class="h-[46px] sm:h-[90px]" />
+          <p class="text-sm sm:text-base">
+            Arya College is the Best Engineering College in the entire Rajasthan.
+          </p>
+    </div>
+    <div class="mb-4">
+          <p class="font-semibold mb-1 text-sm sm:text-base">Address</p>
+          <p class="text-sm">
+            SP-40, RIICO Industrial Area, Kukas,<br />
+            Jaipur, Rajasthan, 302028
+          </p>
+    </div>
+    <div>
+          <p class="font-semibold mb-2 text-sm sm:text-base">Social Media</p>
+          <div class="flex gap-4 text-lg">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      </div>
+      </div>
+      <div class="sm:col-span-1 lg:col-span-2 grid grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-4 text-sm sm:text-base">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Placement</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Mail Center</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Wikipedia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-sm sm:text-base">Admissions</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Prospectus</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Procedure</a></li>
+            <li><a href="#">Fee Structure</a></li>
+            <li><a href="#">Our Affiliation</a></li>
+            <li><a href="#">Degree Status</a></li>
+            <li><a href="#">Bank Loan Assistance</a></li>
+            <li><a href="#">Industrial Alliances</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4 text-sm sm:text-base">Other Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Top Engineering College in Jaipur</a></li>
+          <li><a href="#">Best Engineering College in Jaipur</a></li>
+          <li><a href="#">Best B.Tech College in India</a></li>
+          <li><a href="#">Best University for B.Tech in India</a></li>
+          <li><a href="#">Best Private University in India for B.Tech</a></li>
+          <li><a href="#">Best Private Engineering College in India</a></li>
+          <li><a href="#">Top 10 Private Engineering College in India</a></li>
+          <li><a href="#">Bachelor of Technology – B Tech Courses</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </footer>
+  <div class="text-center text-sm text-[#182F43] mt-10 border-t border-white/20 pt-3 pb-2">
+    © Copyright
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js"></script>
+</body>
+
+</html>
