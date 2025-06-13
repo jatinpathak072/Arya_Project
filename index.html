@@ -13,7 +13,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header class="bg-white shadow-md relative z-999">
+<header id="hero" class="bg-white shadow-md relative z-999">
   <div class="w-full text-white text-sm" id="red">
   <div class="max-w-full bg-[#F13A40] mx-auto flex justify-center md:justify-end items-center py-2">
   <div
@@ -30,8 +30,7 @@
   <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
     <img src="Assets/logo.png" alt="Arya College Logo" class="h-[33px] md:h-10 w-auto" />
     <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#hero"
-          class="text-red-600 font-semibold relative after:content-['•'] after:text-red-600 after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:text-base">Home</a>
+        <a href="#hero" class="text-red-600 font-semibold relative after:content-['•'] after:text-red-600 after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:text-base">Home</a>
         <a href="#about" class="text-gray-400 hover:text-red-600">About Arya</a>
         <a href="#courses" class="text-gray-400 hover:text-red-600">Academics</a>
         <a href="#events" class="text-gray-400 hover:text-red-600">Events</a>
@@ -142,7 +141,7 @@
   </div>
   </div>
   </section>
-  <section class="max-w-7xl mt-9 mx-auto px-4 py-5 md:py-1 text-center" id="about">
+  <section id="about" class="max-w-7xl mt-9 mx-auto px-4 py-5 md:py-1 text-center" id="about">
       <h2 class="text-[22px] md:text-3xl font-bold text-[#2238B2] mb-4">Arya College Jaipur</h2>
       <p class="text-[10px] md:text-[17px] text-[#182F43] max-w-[1133px] mx-auto">
         Arya College is the Best Engineering College in the entire Rajasthan. We don’t just teach students, but we train
@@ -150,7 +149,7 @@
       </p>
   </section>
   <section class="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6 items-center">
-  <div class="space-y-6">
+  <div id="" class="space-y-6">
   <div class="bg-[#F3F4F6] rounded-lg shadow-sm flex">
   <div class="w-6 bg-[#2238B2] flex items-center justify-center p-4 md:p-6 rounded-l-lg">
         <span class="text-white whitespace-nowrap -rotate-90 text-[10px] md:text-sm font-bold">
@@ -227,7 +226,7 @@
         corporate world.
         </p>
   </div>
-  <div class="flex flex-wrap gap-4 mx-4 md:mx-28">
+  <div id="courses" class="flex flex-wrap gap-4 mx-4 md:mx-28">
   <div class="bg-white text-black rounded-xl p-5 shadow-md flex flex-col gap-2 hover:scale-105 transition w-full sm:w-[calc(50%-0.5rem)]">
         <img src="Assets/undergraduation.svg" class="w-[50px]" alt="">
         <span class="font-semibold leading-snug break-words">Under <br> Graduation</span>
@@ -253,7 +252,7 @@
   </div>      
   </div>
   </section>
-  <section class="px-4 py-16 bg-white text-center">
+  <section id="placements" class="px-4 py-16 bg-white text-center">
     <h2 class="text-[12px] md:text-3xl font-bold text-[#1e40af] mb-6">
       Recruitment In Arya College
     </h2>
@@ -304,7 +303,7 @@
   </div>  
   </div>
   </section>
-  <section class="px-4 py-16 bg-white text-center">
+  <section id="Blogs" class="px-4 py-16 bg-white text-center">
     <h2 class="text-2xl md:text-3xl font-bold text-[#2238B2] mb-6">Industrial Alliance</h2>
     <p class="max-w-5xl mx-auto text-gray-700 text-sm md:text-base leading-relaxed mb-12">
       Arya College Jaipur has a definite purpose and represents inter-firm cooperative agreements aiming to achieve a
@@ -349,7 +348,7 @@
   </div>
   </div>
   </section>
-  <section class="bg-[#F6F6F6] py-12 px-4">
+  <section id="resources" class="bg-[#F6F6F6] py-12 px-4">
   <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-2xl md:text-3xl font-bold text-[#2238B2] mb-10">
         Industrial Alliance
@@ -387,7 +386,7 @@
   </div>
   </div>
   </section>
-  <section class="bg-white py-12 px-4">
+  <section id="infrastructure" class="bg-white py-12 px-4">
   <style>
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
@@ -517,7 +516,7 @@
     </div>
     </div>
     </section>
-    <section class="bg-white py-12">
+    <section id="gallery" class="bg-white py-12">
     <div class="max-w-7xl mx-auto px-4 text-center">
         <h2 class="text-xl md:text-2xl font-bold text-[#2238B2] mb-2">
         Awards & Recognition Received By Arya College
@@ -621,7 +620,7 @@
     </div>
     </div>
   </section>
-  <footer class="relative text-white px-6 py-12 overflow-hidden">
+  <footer class="relative text-white px-6 py-12 overflow-hidden" id="Contact Us">
     <div class="absolute inset-0 bg-gradient-to-r from-[#F13A40] to-[#0048FF] z-0"></div>
     <div class="absolute inset-0 bg-black/40 z-0"></div>
     <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
